@@ -1,0 +1,158 @@
+/*BlanklyDB Design, designed by SangLao
+Created on May 4th, 2024*/
+
+/*Default Settings*/
+body{
+  background-color: #fefeff;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image:linear-gradient(45deg, #FBFBFB 25%, transparent 0, transparent 75%, #FBFBFB 0),linear-gradient(45deg, #FBFBFB 25%, transparent 0, transparent 75%, #FBFBFB 0);
+  background-position: 0 0, 100px 100px;
+  background-size: 200px 200px;}
+p,h1,h2,h3,h4,h5,h6,h7{margin: 0;}
+:root{font-size: clamp(0.5rem, 0.209rem + 1.45vw, 1.3rem)}
+:root{
+
+  --blanklyDB-header-hight: 50px;
+
+}
+
+/*text*/
+/*text - Headline*/
+.bdd-headline-1 {font-size: 2rem}
+.bdd-headline-2 {font-size: 1.5rem}
+.bdd-headline-3 {font-size: 1rem}
+.bdd-headline-4 {font-size: 0.5rem}
+/*text - Content*/
+.bdd-content-1 {font-size: 2rem}
+.bdd-content-2 {font-size: 1.9rem}
+.bdd-content-3 {font-size: 1.8rem}
+.bdd-content-4 {font-size: 1.7rem}
+.bdd-content-5 {font-size: 1.6rem}
+.bdd-content-6 {font-size: 1.5rem}
+.bdd-content-7 {font-size: 1.4rem}
+.bdd-content-8 {font-size: 1.3rem}
+.bdd-content-9 {font-size: 1.2rem}
+.bdd-content-10 {font-size: 1.1rem}
+.bdd-content-11 {font-size: 1rem}
+.bdd-content-12 {font-size: 0.9rem}
+.bdd-content-13 {font-size: 0.8rem}
+.bdd-content-14 {font-size: 0.7rem}
+.bdd-content-15 {font-size: 0.6rem}
+.bdd-content-16 {font-size: 0.5rem}
+.bdd-content-17 {font-size: 0.4rem}
+.bdd-content-18 {font-size: 0.3rem}
+.bdd-content-19 {font-size: 0.2rem}
+.bdd-content-20 {font-size: 0.1rem}
+
+/*Flex*/
+.flex{display: flex;}
+.flex-direction-column{flex-direction: column;}
+
+/*structure container*/
+.bdd-100-width{width: 100%;}
+.bdd-100-hight{width: 100%;}
+.bdd-fill-width{width: auto;}
+.bdd-fill-hight{height: auto;}
+.bdd-fc-width{width: fit-content;}
+.bdd-fc-hight{height: fit-content;}
+.bdd-flex-center-container{display:flex;justify-content: center; align-items:center;}
+.bdd-flex-space-evenly{justify-content: space-evenly;}
+.bdd-flex-space-between{justify-content: space-between}
+.bdd-flex-ai-center{align-items:center;}
+.bdd-flex-jc-center{justify-content: center;}
+.bdd-flex-center-block{display: block;}
+.bdd-content-margin{margin: 30px;}
+.bdd-aspect-ratio-16-9 {aspect-ratio: 16 / 9;}
+.bdd-aspect-ratio-4-5 {aspect-ratio: 4 / 5;}
+.inline{display:inline}
+.bdd-border-l1{border-radius: 1px}
+.bdd-border-l2{border-radius:3px}
+.bdd-border-l3{border-radius:5px}
+.bdd-border-l4{border-radius:7px}
+.bdd-border-c25{border-radius:25%}
+.bdd-border-c50{border-radius:50%}
+.bdd-border-c75{border-radius:70%}
+.bdd-border-c100{border-radius: 100%}
+.bdd-sc-padding{padding: 0px 4rem 0px 4rem;}
+
+/*structure text*/
+.bdd-text-container h1{font-size: 1rem}
+
+/*button*/
+.btn{font-size: 0.9rem;padding: 8px;outline: none;border: none;width: fit-content;border-radius: 3px;margin: 0;color: #FFFFFF;margin: 2px 0px 2px 0px;}
+
+/*Autonomous custom element*/
+/*Autonomous custom element --> Header,Container,Footer*/
+bdd-header,bdd-container,bdd-footer{display: block;}
+bdd-header,bdd-footer{flex: 0 0 auto;}
+bdd-header{height: var(--blanklyDB-header-hight);width: 100%;}
+bdd-footer{width: 100%;}
+bdd-container{flex: 1 1 auto;}
+
+/*header*/
+.header-box{height: var(--blanklyDB-header-hight);margin: 0 1rem 0 1rem;}
+.search-box input[type="text"]{min-width: 10rem;border: 1px solid rgba(255, 266, 255, 0.7);border-radius: 5px 0px 0px 5px; background-color: rgba(255, 266, 255, 0.5);padding: 0.5rem;}
+.search-box input[type="submit"]{border-radius: 0px 5px 5px 0px;border: 1px solid rgba(255, 266, 255, 0.7);background-color: rgba(255, 266, 255, 0.5);padding: 0.5rem;}
+/*footer*/
+.footer-info-box p{padding-left: 1.25rem;}
+
+/*Autonomous custom element -->  Button Group*/
+bdd-button-group{display: block;width: fit-content;}
+bdd-button-group button:nth-child(n+1){border-radius: 0px;}
+bdd-button-group button:first-child{border-radius: 3px 0px 0px 3px;}
+bdd-button-group button:last-child{border-radius: 0px 3px 3px 0px;}
+
+/*animations*/
+:root{--background-loading-grey: #D6D6D6;}
+.bdd-loading .loadselect{
+  background-color: var(--background-loading-grey);
+  background: linear-gradient(
+    100deg,
+    rgba(255,255,255,0) 40%,
+    rgba(255,255,255,0.5) 50%,
+    rgba(255,255,255,0) 60%
+    ) var(--background-loading-grey);
+    background-size: 200% 100%;
+    background-position-x: 120%;
+    animation: 1s ani-loading ease-in-out infinite;
+}
+.bdd-hover-focusing{transition: all 0.6s;}
+.bdd-hover-focusing:hover{transform: scale(1.4);}
+/*search box*/
+.search-box input[type="text"]:focus{
+  animation: 0.25s ani-search-box-1 ease-in-out 1;
+  animation-fill-mode: forwards; 
+}
+
+/*KeyFrame*/
+@keyframes ani-loading{
+  to{
+    background-position-x: -20%;
+  }
+}
+@keyframes ani-search-box-1{
+  to{
+    min-width: 20rem;
+  }
+}
+@keyframes ani-search-box-2{
+  to{
+    min-width: 10rem;
+  }
+}
+
+/*media screen*/
+@media screen and (max-width: 712px) {
+  :root{font-size: clamp(1.25rem, 0.209rem + 1.45vw, 2rem)}
+  .bdd-flex-center-container{flex-direction: column;}
+  .bdd-flex-space-evenly{justify-content: center;}
+  .bdd-content-margin{margin: 15px;}
+  .btn{font-size: 1.3rem;padding: 8px;outline: none;border: none;width: fit-content;border-radius: 3px;margin: 0;color: #FFFFFF;margin: 2px 0px 2px 0px;}
+  .bdd-aspect-ratio-4-5{aspect-ratio: 16 / 9}
+  .bdd-sc-padding{padding: 0px 2rem 0px 2rem;}
+  .footer-info-box{flex-direction:column;justify-content: center; align-items:center;}
+  .footer-info-box p{padding-top: 1.25rem;padding-left: 0;}
+}
