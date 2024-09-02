@@ -10,6 +10,9 @@
 .correcting-box{
     width: auto;
 }
+.dyn-tilie{
+    margin-left: 0.5rem;
+}
 #message-box{
     height: 1rem;
 }

@@ -155,4 +155,5 @@ bdd-button-group button:last-child{border-radius: 0px 3px 3px 0px;}
   .bdd-sc-padding{padding: 0px 2rem 0px 2rem;}
   .footer-info-box{flex-direction:column;justify-content: center; align-items:center;}
   .footer-info-box p{padding-top: 1.25rem;padding-left: 0;}
+  .search-box{display: none;}
 }
