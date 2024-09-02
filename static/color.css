@@ -25,13 +25,13 @@
 .text-white{color: #FFFFFF}
 
 /*button*/
-.btn-red{background-color: #FF5252}
-.btn-orange{background-color: #FFAB40}
-.btn-yellow{background-color: #FFFF00}
-.btn-green{background-color: #00E676}
-.btn-cyan{background-color: #18FFFF}
-.btn-blue{background-color: #448AFF}
-.btn-purple{background-color: #E040FB}
-.btn-white{background-color: #FFFFFF}
-.btn-blankly-gold{background-color: #d3a693}
-.btn-blankly-gold-deep{background-color: #cb9680}
+.btn-red{background-color: #FF5252;--color-btn-red: #FF5252;}
+.btn-orange{background-color: #FFAB40;--color-btn-orange: #FFAB40;}
+.btn-yellow{background-color: #FFFF00;--color-btn-yellow: #FFFF00;}
+.btn-green{background-color: #00E676;--color-btn-green: #00E676;}
+.btn-cyan{background-color: #18FFFF;--color-btn-cyan: #18FFFF;}
+.btn-blue{background-color: #448AFF;--color-btn-blue: #448AFF;}
+.btn-purple{background-color: #E040FB;--color-btn-purple: #E040FB;}
+.btn-white{background-color: #FFFFFF;--color-btn-white: #FFFFFF;}
+.btn-blankly-gold{background-color: #d3a693;--color-btn-blankly-gold: #d3a693;}
+.btn-blankly-gold-deep{background-color: #cb9680;--color-btn-blankly-gold-deep: #cb9680;}

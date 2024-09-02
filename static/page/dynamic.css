@@ -9,6 +9,19 @@
     height: fit-content;}
 .correcting-box{
     width: auto;
+    height: 4rem;
+    background-color: rgba(255, 172, 64, 0.14);
+    border: solid 3px;
+    border-color: #ffac4043;
+    padding: 0.7rem 1rem 0.7rem 1rem;
+    margin-top: 4rem;
+}
+.correcting-box button{
+    background-color: #ffac407d;
+    border: solid 3px #ffac4000;
+}
+.correcting-box button:hover{
+    border: solid 3px #ffac404c;
 }
 .dyn-tilie{
     margin-left: 0.5rem;
