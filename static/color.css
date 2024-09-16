@@ -23,6 +23,7 @@
 .text-blue{color: #448AFF}
 .text-purple{color: #E040FB}
 .text-white{color: #FFFFFF}
+.text-gary{color: #c6c6c6;}
 
 /*button*/
 .btn-red{background-color: #FF5252;--color-btn-red: #FF5252;}
