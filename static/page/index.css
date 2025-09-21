@@ -1,7 +1,9 @@
-.bdbp-hot-div-container > div{width: 24rem;margin: 0px 0.5rem 0px 0.5rem;}
-.bdbp-hot-div-container{margin-top: 10px;}
+.bdbp-hot-div-container > div{margin: 0px 0.5rem 0.5rem 0px;}
+.bdbp-hot-div-container{margin-top: 10px;flex-wrap: wrap;}
 .index-a-link{display: block; height: 1.8rem; width: 4.5rem;line-height: 1.8rem;text-align: center;}
 .index-a-link:hover {background-color: rgba(211, 166, 147, 0.6);color: white;}
+
+.dynamic-container{min-width: 10rem;}
 
 @media screen and (max-width: 712px) {
   .bdbp-hot-div-container >div{width: 13rem;margin: 5px 0px 5px 0px;}

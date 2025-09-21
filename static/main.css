@@ -65,8 +65,8 @@ p,h1,h2,h3,h4,h5,h6,h7{margin: 0;}
 .bdd-flex-jc-center{justify-content: center;}
 .bdd-flex-center-block{display: block;}
 .bdd-content-margin{margin: 30px;}
-.bdd-aspect-ratio-16-9 {aspect-ratio: 16 / 9;}
-.bdd-aspect-ratio-4-5 {aspect-ratio: 4 / 5;}
+.bdd-aspect-ratio-16-9 {aspect-ratio: 16 / 9;width: 13rem;}
+.bdd-aspect-ratio-4-5 {aspect-ratio: 4 / 5;width: 10rem;}
 .inline{display:inline}
 .bdd-border-l1{border-radius: 1px}
 .bdd-border-l2{border-radius:3px}
