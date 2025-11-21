@@ -4,18 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../static/main.css">
-    <link rel="stylesheet" href="../static/iconfont/iconfont.css">
-    <link rel="stylesheet" href="../static/page/picture_base.css">
+    <!--[if lt IE 9]><script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script><![endif]-->
+    <link rel="stylesheet" href="./static/main.css">
+    <link rel="stylesheet" href="./static/color.css">
+    <link rel="stylesheet" href="./static/footer/footer.css">
+    <link rel="stylesheet" href="./static/iconfont/iconfont.css">
+    <link rel="stylesheet" href="./static/fonts.css">
+    <link rel="stylesheet" href="./static/page/index.css">
+    <script type="text/javascript" src="../static/API.js"></script>
     <script type="text/javascript" src="../static/main.js"></script>
-    <title>BlanklyDB·动态 - name</title>
+    <title>BlanklyDB - 主页</title>
 </head>
 
 <body>
   <bdd-header class="bg-blankly-gold">
     <div class="flex bdd-flex-ai-center bdd-flex-space-between header-box">
       <div class="flex bdd-flex-center-container">
-        <img src="../static/img/logo.png" width="141px" class="inline">
+        <button class="hamburger">
+            <div class="hamburger__line"></div>
+            <div class="hamburger__line"></div>
+            <div class="hamburger__line"></div>
+        </button>
+        <img src="./static/img/logo.png" width="141px" height="39" class="inline" id="header-img">
       </div>
       <div class="search-box flex bdd-flex-ai-center">
         <input class="font-Alimom" type="text" placeholder="在BlanklyDB中搜索...">
@@ -23,27 +33,75 @@
       </div>
     </div>
   </bdd-header>
-  <bdd-container class="iconfont">
-    <div class="head-box" style="padding-left: 2rem;">
-        <p class="bdd-headline-1 icon-tuku" style="display: inline-block;"></p>
-        <p class="bdd-headline-1 font-Alimom-blod" style="display: inline-block;margin-left: 0.5rem;">图库</p>
+  <bdd-container class="iconfont bdd-sc-padding">
+    <!--[if IE]>
+    <div style="color: white;width: 100%;background-color: #FF5252;margin-top: 25px;padding:20px;">
+      <div style="width: 50px;height: 50px;margin-top: auto;margin-bottom: auto;">
+        <img src="./static/img/ie.png" width="50px" height="50px">
+      </div>
+      <h1 class="bdd-headline-2">尽可能保障您的访问</h1>
+      <p class="bdd-content-13">虽然但是请停止使用IE浏览器来访问我所创建的内容</p>
+      <p class="bdd-content-13">内容构建在HTML5与CSS3.0等现代化的Web标准中，虽然通过技术手段可以让您保持访问<br>但您将无法获得最佳的视觉体验，我们推荐您使用Chrome。这是我“工作”时的浏览器</p>
     </div>
-    <div  class="bdd-sc-padding">
-        
+    <![endif]-->
+    <div class="bdd-content-margin bdd-fill-width"></div>
     </div>
   </bdd-container>
   <bdd-footer class="bg-blankly-gold">
     <p id="message-box" class="bdd-content-15 bbp-rights text-white font-Alimom"></p>
     <div style="padding: 1.5rem;">
       <div class="flex dd-flex-center-container footer-info-box">
-        <img src="../static/img/logo.png" width="254px" class="inline">
-        <p class="bdd-content-13 text-white font-Alimom-blod" style="width: 15rem;">BlanklyDB是酸酪开发与维护的非盈利网站,旨在降低猫猫粉丝寻找、查阅 动态、视频、图&文 等资源所耗费的精力。</p>
-      </div>
-      <div>
+        <img src="./static/img/logo.png" width="254px" height="70" class="inline">
+        <p class="bdd-content-13 text-white font-Alimom-blod" style="width: 15rem;">BlanklyDB是非盈利网站,旨在降低猫猫粉丝寻找、查阅 动态、视频、图文 等资源所浪费的不必要的时间精力（压力全都给到我了说是）。</p>
+        <div class="bdd-content-13" id="footer_menu">
+          <ul style="float: left">
+            <p>有趣的内容</p><hr>
+            <li><a href="#">视频</a></li>
+            <li><a href="#">图片</a></li>
+            <li><a href="#">动态（文图）</a></li>
+            <li><a href="#">漫画</a></li>
+            <li><a href="#">表情包</a></li>
+            <li><a href="#">音频</a></li>
+            <li><a href="#">创作者们</a></li>
+            <li><a href="#">动态壁纸（WPE）</a></li>
+            <li><a href="https://live.bilibili.com/1301450">直播间</a></li>
+          </ul>
+          <ul style="float: left">
+            <p>数据服务</p>
+            <hr>
+            <li><a href="#">统计</a></li>
+            <li><a href="">报表</a></li>
+            <li><a href="#">导出（Lab）</a></li>
+            <li><a href="#">数据库</a></li>
+          </ul>
+          <ul style="float: left">
+            <p>关于</p>
+            <hr>
+            <li><a href="">关于</a></li>
+            <li><a href="#">STAFF（斯大福？）</a></li>
+            <li><a href="#">站点教程</a></li>
+            <li><a href="#">站点地图</a></li>
+          </ul>
+          <ul style="float: left">
+            <p>其他</p>
+            <hr>
+            <li><a href="#">API Doc</a></li>
+            <li><a href="https://github.com/BlanklyDB-Project">开源仓库（Github）</a></li>
+            <li><a href="#">私有Git仓库</a></li><hr>
+            <p>其他访问方式</p>
+            
+            <li><a href="#">Telnet</a></li>
+            <li><a href="#">FTP</a></li><hr>
+            <p>网都没有？</p>
+            
+            <li><a href="#">通过邮政访问？</a></li>
+            <li><a href="#">AR-BDB</a></li>
+          </ul>
+        </div>
       </div>
     </div>
-    <p class="bdd-content-15 bbp-rights bg-blankly-gold-deep text-white font-Alimom">BiliBili：酸酪_SourCheese | QQ：3284316248 | E-mail：serrer6@outlook.com</p>
-    <p class="bdd-content-15 bbp-rights bg-blankly-gold-deep text-white font-Alimom">By ❤️. Powered by 酸酪qwq.具体内容归其创作者所有，无特殊说明下采用CC-BY-NC授权</p>
+    <p class="bdd-content-15 bbp-rights bg-blankly-gold-deep text-white font-Alimom" id="f_text">BiliBili：酸酪QwQ | QQ：3284316248 | E-mail：serrer6@outlook.com</p>
+    <p class="bdd-content-15 bbp-rights bg-blankly-gold-deep text-white font-Alimom">By ❤️. Powered by 酸酪qwq.具体内容归其创作者所有，无特殊说明下采用 CC BY-NC-ND 4.0授权</p>
   </bdd-footer>
 </body>
 

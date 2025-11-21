@@ -13,19 +13,26 @@
     <link rel="stylesheet" href="./static/page/index.css">
     <script type="text/javascript" src="../static/API.js"></script>
     <script type="text/javascript" src="../static/main.js"></script>
+    <style>
+      #arbdb_ul > li:nth-child(n+2){
+        font-family: Alimom;
+        font-variation-settings:"wght" 500,"bevl" 1;
+      }
+    </style>
     <title>BlanklyDB - 主页</title>
 </head>
 
-<body>
-  <bdd-header class="bg-blankly-gold">
+<body style="position: relative;">
+  <bdd-header style="position: absolute;top: 0;left: 0;">
     <div class="flex bdd-flex-ai-center bdd-flex-space-between header-box">
-      <div class="flex bdd-flex-center-container">
+      <div class="flex bdd-flex-ai-center">
         <button class="hamburger">
             <div class="hamburger__line"></div>
             <div class="hamburger__line"></div>
             <div class="hamburger__line"></div>
         </button>
-        <img src="./static/img/logo.png" width="141px" height="39" class="inline" id="header-img">
+        <a href="./index.html" style="height: 39px;"><img src="./static/img/logo.png" width="141px" height="39" class="inline" id="header-img"></a>
+        <p class="font-Alimom-blod text-white" style="position:relative;top: -1.5px;">·Amateur Radio</p>
       </div>
       <div class="search-box flex bdd-flex-ai-center">
         <input class="font-Alimom" type="text" placeholder="在BlanklyDB中搜索...">
@@ -33,7 +40,7 @@
       </div>
     </div>
   </bdd-header>
-  <bdd-container class="iconfont bdd-sc-padding">
+  <bdd-container class="iconfont">
     <!--[if IE]>
     <div style="color: white;width: 100%;background-color: #FF5252;margin-top: 25px;padding:20px;">
       <div style="width: 50px;height: 50px;margin-top: auto;margin-bottom: auto;">
@@ -44,56 +51,26 @@
       <p class="bdd-content-13">内容构建在HTML5与CSS3.0等现代化的Web标准中，虽然通过技术手段可以让您保持访问<br>但您将无法获得最佳的视觉体验，我们推荐您使用Chrome。这是我“工作”时的浏览器</p>
     </div>
     <![endif]-->
-    <div class="bdd-content-margin bdd-fill-width">
-      <div class="flex bdd-flex-space-between bdd-flex-ai-center bdd-flex-center-container">
-        <h1 class="bdd-headline-1 icon-hot">最热门</h1>
-      </div>
-      <div class="bdd-loading bdd-flex-center-container bdbp-hot-div-container">
-        <div class="loadselect bdd-aspect-ratio-16-9 bdd-border-l4"></div>
-        <div class="loadselect bdd-aspect-ratio-16-9 bdd-border-l4"></div>
-        <div class="loadselect bdd-aspect-ratio-16-9 bdd-border-l4"></div>
-      </div>
+    <div style="background-image: url(./static/img/radio.jpg);color: white;height: 400px;padding-left: 40px;background-size: cover;padding-top: 50px;" class="font-Alimom-blod flex bdd-flex-ai-center">
+        <div class="">
+            <h1>没网还想看“片”，不走邮政还想快</h1>
+            <h1>完全可以实现！</h1>
+            <h1>AR-BlanklyDB</h1>
+        </div>
     </div>
-    <div class="bdd-content-margin bdd-fill-width">
-      <div class="flex bdd-flex-space-between bdd-flex-ai-center bdd-flex-center-container">
-        <h1 class="bdd-headline-1 icon-article inline">动态</h1>
-        <a class="bdd-content-14 text-blue index-a-link bdd-border-l4">了解更多 ></a>
-      </div>
-      <div class="bdd-loading bdd-flex-center-container bdbp-hot-div-container">
-        <div class="loadselect dynamic-container bdd-aspect-ratio-4-5 bdd-border-l4"></div>
-        <div class="loadselect dynamic-container bdd-aspect-ratio-4-5 bdd-border-l4"></div>
-        <div class="loadselect dynamic-container bdd-aspect-ratio-4-5 bdd-border-l4"></div>
-        <div class="loadselect dynamic-container bdd-aspect-ratio-4-5 bdd-border-l4"></div>
-        <div class="loadselect dynamic-container bdd-aspect-ratio-4-5 bdd-border-l4"></div>
-        <div class="loadselect dynamic-container bdd-aspect-ratio-4-5 bdd-border-l4"></div>
-      </div>
-    </div>
-    <div class="bdd-content-margin bdd-fill-width">
-      <div class="flex bdd-flex-space-between bdd-flex-ai-center bdd-flex-center-container">
-        <h1 class="bdd-headline-1 icon-article inline">视频</h1>
-        <a class="bdd-content-14 text-blue index-a-link bdd-border-l4">了解更多 ></a>
-      </div>
-      <div class="bdd-loading bdd-flex-center-container  bdbp-hot-div-container">
-        <div class="loadselect bdd-aspect-ratio-16-9 bdd-border-l4"></div>
-        <div class="loadselect bdd-aspect-ratio-16-9 bdd-border-l4"></div>
-      </div>
-    </div>
-    <div class="bdd-content-margin bdd-fill-width">
-      <div class="flex bdd-flex-space-between bdd-flex-ai-center bdd-flex-center-container">
-        <h1 class="bdd-headline-1 icon-article inline">文图</h1>
-        <a class="bdd-content-14 text-blue index-a-link bdd-border-l4">了解更多 ></a>
-      </div>
-      <div class="bdd-loading bdd-flex-center-container bdbp-hot-div-container">
-        <div class="loadselect bdd-aspect-ratio-4-5 bdd-border-l4"></div>
-        <div class="loadselect bdd-aspect-ratio-4-5 bdd-border-l4"></div>
-        <div class="loadselect bdd-aspect-ratio-4-5 bdd-border-l4"></div>
-        <div class="loadselect bdd-aspect-ratio-4-5 bdd-border-l4"></div>
-      </div>
-    </div>
-    <div class="bdd-content-margin bdd-fill-width">
-      <div class="flex bdd-flex-space-between bdd-flex-ai-center bdd-flex-center-container">
-        <h1 class="bdd-headline-1 inline">相关链接</h1>
-      </div>
+    <div class="bdd-content-margin bdd-fill-width bdd-sc-padding">
+        <h1 class="bdd-headline-1">什么是AR-BDB？</h1><div class="font-Alimom-blod">
+        <p class="bdd-content-13">AR-BDB 是 Amateur Radio - BlanklyDB 的缩写，中文译为“业余无线电上的BlanklyDB”<br>通过在业余频段上的通联过程中“夹带私货”（bushi<br>使您在没有网络的情况下也能获取相关内容</p>
+        </div><hr class="hr_black" style="width: 20rem;">
+        <p class="bdd-content-13">支持各种常用的模拟、数字通讯协议<br>在页面下方“支持‘AR-BDB’的业余电台”的“State”一栏变为ON AIR,Active时 <br>即该业余电台受理AR-BDB的请求且支持“协议”列表中的所有通讯模式<br>即使，您没有使用玩一下AR-BDB的想法，列表中的业余电台也很乐意在开机发信时辅助您的测试</p>
+        <br><br><br>
+        <h1 class="bdd-headline-1">我们支持的协议</h1>
+        <ul id="arbdb_ul">
+          <li>
+            <h1 class="bdd-headline-1">SSTV / SSDV</h1>
+            <p class="bdd-content-13">通过慢扫描电视（数字），向您传送您所需的图像</p>
+          </li>
+        </ul>
     </div>
   </bdd-container>
   <bdd-footer class="bg-blankly-gold">
@@ -144,7 +121,7 @@
             <p>网都没有？</p>
             
             <li><a href="#">通过邮政访问？</a></li>
-            <li><a href="./arbdb.html">AR-BDB</a></li>
+            <li><a href="#">AR-BDB</a></li>
           </ul>
         </div>
       </div>
