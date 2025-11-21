@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--[if lt IE 9]><script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script><![endif]-->
-    <link rel="stylesheet" href="./static/main.css">
-    <link rel="stylesheet" href="./static/color.css">
-    <link rel="stylesheet" href="./static/footer/footer.css">
-    <link rel="stylesheet" href="./static/iconfont/iconfont.css">
-    <link rel="stylesheet" href="./static/fonts.css">
-    <link rel="stylesheet" href="./static/page/index.css">
+    <link rel="stylesheet" href="../static/main.css">
+    <link rel="stylesheet" href="../static/color.css">
+    <link rel="stylesheet" href="../static/footer/footer.css">
+    <link rel="stylesheet" href="../static/iconfont/iconfont.css">
+    <link rel="stylesheet" href="../static/fonts.css">
+    <link rel="stylesheet" href="../static/page/index.css">
+    <link rel="stylesheet" href="../static/page/sticker.css">
     <script type="text/javascript" src="../static/API.js"></script>
     <script type="text/javascript" src="../static/main.js"></script>
     <title>BlanklyDB - 主页</title>
@@ -25,7 +26,7 @@
             <div class="hamburger__line"></div>
             <div class="hamburger__line"></div>
         </button>
-        <img src="./static/img/logo.png" width="141px" height="39" class="inline" id="header-img">
+        <img src="../static/img/logo.png" width="141px" height="39" class="inline" id="header-img">
       </div>
       <div class="search-box flex bdd-flex-ai-center">
         <input class="font-Alimom" type="text" placeholder="在BlanklyDB中搜索...">
@@ -45,62 +46,16 @@
     </div>
     <![endif]-->
     <div class="bdd-content-margin bdd-fill-width">
-      <div class="flex bdd-flex-space-between bdd-flex-ai-center bdd-flex-center-container">
-        <h1 class="bdd-headline-1 icon-hot">最热门</h1>
-      </div>
-      <div class="bdd-loading bdd-flex-center-container bdbp-hot-div-container">
-        <div class="loadselect bdd-aspect-ratio-16-9 bdd-border-l4"></div>
-        <div class="loadselect bdd-aspect-ratio-16-9 bdd-border-l4"></div>
-        <div class="loadselect bdd-aspect-ratio-16-9 bdd-border-l4"></div>
-      </div>
-    </div>
-    <div class="bdd-content-margin bdd-fill-width">
-      <div class="flex bdd-flex-space-between bdd-flex-ai-center bdd-flex-center-container">
-        <h1 class="bdd-headline-1 icon-article inline">动态</h1>
-        <a class="bdd-content-14 text-blue index-a-link bdd-border-l4">了解更多 ></a>
-      </div>
-      <div class="bdd-loading bdd-flex-center-container bdbp-hot-div-container">
-        <div class="loadselect dynamic-container bdd-aspect-ratio-4-5 bdd-border-l4"></div>
-        <div class="loadselect dynamic-container bdd-aspect-ratio-4-5 bdd-border-l4"></div>
-        <div class="loadselect dynamic-container bdd-aspect-ratio-4-5 bdd-border-l4"></div>
-        <div class="loadselect dynamic-container bdd-aspect-ratio-4-5 bdd-border-l4"></div>
-        <div class="loadselect dynamic-container bdd-aspect-ratio-4-5 bdd-border-l4"></div>
-        <div class="loadselect dynamic-container bdd-aspect-ratio-4-5 bdd-border-l4"></div>
-      </div>
-    </div>
-    <div class="bdd-content-margin bdd-fill-width">
-      <div class="flex bdd-flex-space-between bdd-flex-ai-center bdd-flex-center-container">
-        <h1 class="bdd-headline-1 icon-article inline">视频</h1>
-        <a class="bdd-content-14 text-blue index-a-link bdd-border-l4">了解更多 ></a>
-      </div>
-      <div class="bdd-loading bdd-flex-center-container  bdbp-hot-div-container">
-        <div class="loadselect bdd-aspect-ratio-16-9 bdd-border-l4"></div>
-        <div class="loadselect bdd-aspect-ratio-16-9 bdd-border-l4"></div>
-      </div>
-    </div>
-    <div class="bdd-content-margin bdd-fill-width">
-      <div class="flex bdd-flex-space-between bdd-flex-ai-center bdd-flex-center-container">
-        <h1 class="bdd-headline-1 icon-article inline">文图</h1>
-        <a class="bdd-content-14 text-blue index-a-link bdd-border-l4">了解更多 ></a>
-      </div>
-      <div class="bdd-loading bdd-flex-center-container bdbp-hot-div-container">
-        <div class="loadselect bdd-aspect-ratio-4-5 bdd-border-l4"></div>
-        <div class="loadselect bdd-aspect-ratio-4-5 bdd-border-l4"></div>
-        <div class="loadselect bdd-aspect-ratio-4-5 bdd-border-l4"></div>
-        <div class="loadselect bdd-aspect-ratio-4-5 bdd-border-l4"></div>
-      </div>
-    </div>
-    <div class="bdd-content-margin bdd-fill-width">
-      <div class="flex bdd-flex-space-between bdd-flex-ai-center bdd-flex-center-container">
-        <h1 class="bdd-headline-1 inline">相关链接</h1>
-      </div>
+        <div id="stickers_list">
+            <div class="sticker_body"></div>
+        </div>
     </div>
   </bdd-container>
   <bdd-footer class="bg-blankly-gold">
     <p id="message-box" class="bdd-content-15 bbp-rights text-white font-Alimom"></p>
     <div style="padding: 1.5rem;">
       <div class="flex dd-flex-center-container footer-info-box">
-        <img src="./static/img/logo.png" width="254px" height="70" class="inline">
+        <img src="../static/img/logo.png" width="254px" height="70" class="inline">
         <p class="bdd-content-13 text-white font-Alimom-blod" style="width: 15rem;">BlanklyDB是非盈利网站,旨在降低猫猫粉丝寻找、查阅 动态、视频、图文 等资源所浪费的不必要的时间精力（压力全都给到我了说是）。</p>
         <div class="bdd-content-13" id="footer_menu">
           <ul style="float: left">
@@ -144,7 +99,7 @@
             <p>网都没有？</p>
             
             <li><a href="#">通过邮政访问？</a></li>
-            <li><a href="./arbdb.html">AR-BDB</a></li>
+            <li><a href="#">AR-BDB</a></li>
           </ul>
         </div>
       </div>
