@@ -1,4 +1,24 @@
-.sticker_body{}
-#sticker_header{}
-#sticker_title{}
-#sticker_desc{}
+.sticker_body{background-color: rgb(247, 246, 246);
+border:1px solid #dadada;
+min-height: 10vh;
+padding:20px;}
+#sticker_header{width: 100%;}
+#sticker_icon{
+    height: 2.3rem;
+    width: 2.3rem;
+    float:left;
+}
+#sticker_title{float:left;margin-left:1rem;}
+#sticker_viewport{
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 85%;
+    margin:40px 0px 0px 0px;
+}
+#sticker_viewport > img{
+    width: 5rem;
+    height: 5rem;
+}
+.sticker_body:nth-child(n+2){
+    margin-top:2rem;
+}
