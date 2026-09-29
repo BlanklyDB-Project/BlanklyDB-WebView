@@ -1,7 +1,10 @@
 .sticker_body{background-color: rgb(247, 246, 246);
 border:1px solid #dadada;
 min-height: 10vh;
-padding:20px;}
+padding:20px;
+width: 75%;
+margin:auto;
+flex-direction: column;}
 #sticker_header{width: 100%;}
 #sticker_icon{
     height: 2.3rem;
@@ -12,13 +15,54 @@ padding:20px;}
 #sticker_viewport{
     flex-wrap: wrap;
     gap: 20px;
-    width: 85%;
+    width: 60%;
     margin:40px 0px 0px 0px;
+    padding:auto;
 }
 #sticker_viewport > img{
     width: 5rem;
     height: 5rem;
 }
+
 .sticker_body:nth-child(n+2){
     margin-top:2rem;
+}
+#xb > img{
+    width: 5rem;
+    height: 5rem;
+}
+
+.sticker-section-title{
+    margin-top: 2rem;
+    text-align: center;
+}
+.sticker-xb-wrapper{
+    flex-wrap: wrap;
+}
+.sticker-xb-grid{
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 85%;
+    margin: 20px auto 0 auto;
+}
+.sticker-pagination{
+    margin: auto;
+    margin-top: 20px;
+}
+@media screen and (max-width: 712px) {
+    #sticker_icon{display: none;}
+    #sticker_header{flex-wrap:wrap;justify-content: center;}
+    #sticker_info{display: flex;flex-wrap: wrap;justify-content: center;margin: 0 auto 0 auto;}
+    #sticker_title{text-align: center;margin: 0;}
+    #sticker_viewport > img{
+    width: 3rem;
+    height: 3rem;
+    }
+    #sticker_viewport{gap: 20px;width: 80%;}
+}
+@media screen and (max-width: 600px) {
+    #sticker_viewport{width: 100%;}
+}
+@media screen and (max-width: 663px){
+    #add_button{margin-top: 10px;}
 }

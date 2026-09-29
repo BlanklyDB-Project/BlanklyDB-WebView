@@ -7,62 +7,34 @@
     <!--[if lt IE 9]><script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script><![endif]-->
     <link rel="stylesheet" href="./static/main.css">
     <link rel="stylesheet" href="./static/color.css">
-    <link rel="stylesheet" href="./static/footer/footer.css">
-    <link rel="stylesheet" href="./static/iconfont/iconfont.css">
     <link rel="stylesheet" href="./static/fonts.css">
+    <link rel="stylesheet" href="./static/iconfont/iconfont.css">
     <link rel="stylesheet" href="./static/page/index.css">
-    <script type="text/javascript" src="../static/API.js"></script>
-    <script type="text/javascript" src="../static/main.js"></script>
+    <script type="text/javascript" src="./static/main.js"></script>
     <style>
       #arbdb_ul > li:nth-child(n+2){
         font-family: Alimom;
         font-variation-settings:"wght" 500,"bevl" 1;
       }
     </style>
-    <title>BlanklyDB - 主页</title>
+    <title>BlanklyDB - 业余无线电</title>
 </head>
 
 <body style="position: relative;">
-  <bdd-header style="position: absolute;top: 0;left: 0;">
-    <div class="flex bdd-flex-ai-center bdd-flex-space-between header-box">
-      <div class="flex bdd-flex-ai-center">
-        <button class="hamburger">
-            <div class="hamburger__line"></div>
-            <div class="hamburger__line"></div>
-            <div class="hamburger__line"></div>
-        </button>
-        <a href="./index.html" style="height: 39px;"><img src="./static/img/logo.png" width="141px" height="39" class="inline" id="header-img"></a>
-        <p class="font-Alimom-blod text-white" style="position:relative;top: -1.5px;">·Amateur Radio</p>
-      </div>
-      <div class="search-box flex bdd-flex-ai-center">
-        <input class="font-Alimom" type="text" placeholder="在BlanklyDB中搜索...">
-        <input class="font-Alimom" type="submit" value="搜索">
-      </div>
-    </div>
-  </bdd-header>
+  <bdd-header style="position: absolute;top: 0;left: 0;"></bdd-header>
   <bdd-container class="iconfont">
-    <!--[if IE]>
-    <div style="color: white;width: 100%;background-color: #FF5252;margin-top: 25px;padding:20px;">
-      <div style="width: 50px;height: 50px;margin-top: auto;margin-bottom: auto;">
-        <img src="./static/img/ie.png" width="50px" height="50px">
-      </div>
-      <h1 class="bdd-headline-2">尽可能保障您的访问</h1>
-      <p class="bdd-content-13">虽然但是请停止使用IE浏览器来访问我所创建的内容</p>
-      <p class="bdd-content-13">内容构建在HTML5与CSS3.0等现代化的Web标准中，虽然通过技术手段可以让您保持访问<br>但您将无法获得最佳的视觉体验，我们推荐您使用Chrome。这是我“工作”时的浏览器</p>
-    </div>
-    <![endif]-->
-    <div style="background-image: url(./static/img/radio.jpg);color: white;height: 400px;padding-left: 40px;background-size: cover;padding-top: 50px;" class="font-Alimom-blod flex bdd-flex-ai-center">
-        <div class="">
-            <h1>没网还想看“片”，不走邮政还想快</h1>
+    <div class="arbdb-hero font-Alimom-blod flex bdd-flex-ai-center">
+        <div>
+            <h1>没网还想看"片"，不走邮政还想快</h1>
             <h1>完全可以实现！</h1>
             <h1>AR-BlanklyDB</h1>
         </div>
     </div>
     <div class="bdd-content-margin bdd-fill-width bdd-sc-padding">
         <h1 class="bdd-headline-1">什么是AR-BDB？</h1><div class="font-Alimom-blod">
-        <p class="bdd-content-13">AR-BDB 是 Amateur Radio - BlanklyDB 的缩写，中文译为“业余无线电上的BlanklyDB”<br>通过在业余频段上的通联过程中“夹带私货”（bushi<br>使您在没有网络的情况下也能获取相关内容</p>
+        <p class="bdd-content-13">AR-BDB 是 Amateur Radio - BlanklyDB 的缩写，中文译为"业余无线电上的BlanklyDB"<br>通过在业余频段上的通联过程中"夹带私货"（bushi<br>使您在没有网络的情况下也能获取相关内容</p>
         </div><hr class="hr_black" style="width: 20rem;">
-        <p class="bdd-content-13">支持各种常用的模拟、数字通讯协议<br>在页面下方“支持‘AR-BDB’的业余电台”的“State”一栏变为ON AIR,Active时 <br>即该业余电台受理AR-BDB的请求且支持“协议”列表中的所有通讯模式<br>即使，您没有使用玩一下AR-BDB的想法，列表中的业余电台也很乐意在开机发信时辅助您的测试</p>
+        <p class="bdd-content-13">支持各种常用的模拟、数字通讯协议<br>在页面下方"支持'AR-BDB'的业余电台"的"State"一栏变为ON AIR,Active时 <br>即该业余电台受理AR-BDB的请求且支持"协议"列表中的所有通讯模式<br>即使，您没有使用玩一下AR-BDB的想法，列表中的业余电台也很乐意在开机发信时辅助您的测试</p>
         <br><br><br>
         <h1 class="bdd-headline-1">我们支持的协议</h1>
         <ul id="arbdb_ul">
@@ -73,62 +45,7 @@
         </ul>
     </div>
   </bdd-container>
-  <bdd-footer class="bg-blankly-gold">
-    <p id="message-box" class="bdd-content-15 bbp-rights text-white font-Alimom"></p>
-    <div style="padding: 1.5rem;">
-      <div class="flex dd-flex-center-container footer-info-box">
-        <img src="./static/img/logo.png" width="254px" height="70" class="inline">
-        <p class="bdd-content-13 text-white font-Alimom-blod" style="width: 15rem;">BlanklyDB是非盈利网站,旨在降低猫猫粉丝寻找、查阅 动态、视频、图文 等资源所浪费的不必要的时间精力（压力全都给到我了说是）。</p>
-        <div class="bdd-content-13" id="footer_menu">
-          <ul style="float: left">
-            <p>有趣的内容</p><hr>
-            <li><a href="#">视频</a></li>
-            <li><a href="#">图片</a></li>
-            <li><a href="#">动态（文图）</a></li>
-            <li><a href="#">漫画</a></li>
-            <li><a href="#">表情包</a></li>
-            <li><a href="#">音频</a></li>
-            <li><a href="#">创作者们</a></li>
-            <li><a href="#">动态壁纸（WPE）</a></li>
-            <li><a href="https://live.bilibili.com/1301450">直播间</a></li>
-          </ul>
-          <ul style="float: left">
-            <p>数据服务</p>
-            <hr>
-            <li><a href="#">统计</a></li>
-            <li><a href="">报表</a></li>
-            <li><a href="#">导出（Lab）</a></li>
-            <li><a href="#">数据库</a></li>
-          </ul>
-          <ul style="float: left">
-            <p>关于</p>
-            <hr>
-            <li><a href="">关于</a></li>
-            <li><a href="#">STAFF（斯大福？）</a></li>
-            <li><a href="#">站点教程</a></li>
-            <li><a href="#">站点地图</a></li>
-          </ul>
-          <ul style="float: left">
-            <p>其他</p>
-            <hr>
-            <li><a href="#">API Doc</a></li>
-            <li><a href="https://github.com/BlanklyDB-Project">开源仓库（Github）</a></li>
-            <li><a href="#">私有Git仓库</a></li><hr>
-            <p>其他访问方式</p>
-            
-            <li><a href="#">Telnet</a></li>
-            <li><a href="#">FTP</a></li><hr>
-            <p>网都没有？</p>
-            
-            <li><a href="#">通过邮政访问？</a></li>
-            <li><a href="#">AR-BDB</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <p class="bdd-content-15 bbp-rights bg-blankly-gold-deep text-white font-Alimom" id="f_text">BiliBili：酸酪QwQ | QQ：3284316248 | E-mail：serrer6@outlook.com</p>
-    <p class="bdd-content-15 bbp-rights bg-blankly-gold-deep text-white font-Alimom">By ❤️. Powered by 酸酪qwq.具体内容归其创作者所有，无特殊说明下采用 CC BY-NC-ND 4.0授权</p>
-  </bdd-footer>
+  <bdd-footer class="bg-blankly-gold"></bdd-footer>
 </body>
 
 </html>

@@ -5,6 +5,15 @@
 
 .dynamic-container{min-width: 10rem;}
 
+.arbdb-hero{
+    background-image: url(../img/radio.jpg);
+    color: white;
+    height: 400px;
+    padding-left: 40px;
+    background-size: cover;
+    padding-top: 50px;
+}
+
 @media screen and (max-width: 712px) {
   .bdbp-hot-div-container >div{width: 13rem;margin: 5px 0px 5px 0px;}
 }
