@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="../static/color.css">
     <link rel="stylesheet" href="../static/fonts.css">
     <link rel="stylesheet" href="../static/iconfont/iconfont.css">
+    <link rel="stylesheet" href="../static/page/artist.css">
     <script type="text/javascript" src="../static/main.js"></script>
+    <script type="text/javascript" src="../static/page/artist.js"></script>
     <title>BlanklyDB - 创作者们</title>
 </head>
 
@@ -21,18 +23,33 @@
       </div>
       <p class="bdd-content-13 text-gary font-Alimom" style="margin-top: 0.5rem;">在这里了解内容的创作者们</p>
 
-      <div class="bdd-loading bdd-flex-center-container bdbp-hot-div-container flex-direction-column" style="margin-top: 1.5rem;">
-        <div class="bdd-border-l4 bdd-100-width flex bdd-flex-ai-center bdd-box-shadow" style="margin-bottom: 0.5rem;height: 100px;gap: 1rem;padding-left: 1rem;">
-            <img src="../11111.avif" style="border-radius: 50%;width: 2.7rem;height: 2.7rem;">
-            <div>
-                <p class="bdd-content-13 font-Alimom-bold">创作者1</p>
-                <p class="bdd-content-13 text-gary font-Alimom" style="margin-top: 0.5rem;">创作者1的描述</p>
-            </div>
-        </div>
+      <div id="creator-list" class="bdd-loading bdd-flex-center-container bdbp-hot-div-container flex-direction-column" style="margin-top: 1.5rem;">
       </div>
+      
     </div>
   </bdd-container>
   <bdd-footer class="bg-blankly-gold"></bdd-footer>
+<script>
+(function() {
+    var list = document.getElementById('creator-list');
+
+    var placeholderData = [
+        {
+            avatar: '../11111.avif',
+            name: '创作者1',
+            description: '20簧管，64簧管业余爱好家～大概,是想要成为娜娜奇呐~',
+            platforms: [
+                { code: 'bilibili', url: 'https://space.bilibili.com/1' },
+                { code: 'twitter',  url: 'https://x.com/creator1' },
+                { code: 'pixiv',    url: 'https://www.pixiv.net/users/1' }
+            ],
+            homepage: '/viewer/artist/1'
+        }
+    ];
+
+    BDBCreator.appendCreatorCards(list, placeholderData);
+})();
+</script>
 </body>
 
 </html>

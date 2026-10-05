@@ -62,7 +62,53 @@
         if (loadedCount >= totalComponents) {
             showIEWarning();
             initMessageBox();
+            initHamburgerMenu();
         }
+    }
+
+    function initHamburgerMenu() {
+        var btn = document.getElementById('hamburger-btn');
+        var drawer = document.getElementById('nav-drawer');
+        var overlay = document.getElementById('nav-overlay');
+
+        if (!btn || !drawer || !overlay) {
+            return;
+        }
+
+        function openMenu() {
+            btn.classList.add('is-open');
+            drawer.classList.add('is-open');
+            overlay.classList.add('is-open');
+        }
+
+        function closeMenu() {
+            btn.classList.remove('is-open');
+            drawer.classList.remove('is-open');
+            overlay.classList.remove('is-open');
+        }
+
+        btn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            if (drawer.classList.contains('is-open')) {
+                closeMenu();
+            } else {
+                openMenu();
+            }
+        });
+
+        overlay.addEventListener('click', function() {
+            closeMenu();
+        });
+
+        drawer.addEventListener('click', function(e) {
+            e.stopPropagation();
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && drawer.classList.contains('is-open')) {
+                closeMenu();
+            }
+        });
     }
 
     loadComponent('header', 'bdd-header', onAllLoaded);

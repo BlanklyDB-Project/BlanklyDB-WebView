@@ -1,6 +1,6 @@
 <div class="flex bdd-flex-ai-center bdd-flex-space-between header-box">
   <div class="flex bdd-flex-center-container">
-    <button class="hamburger">
+    <button class="hamburger" id="hamburger-btn">
       <div class="hamburger__line"></div>
       <div class="hamburger__line"></div>
       <div class="hamburger__line"></div>
@@ -14,3 +14,32 @@
     <input class="font-Alimom" type="submit" value="搜索">
   </div>
 </div>
+<div class="nav-drawer-overlay" id="nav-overlay"></div>
+<nav class="nav-drawer" id="nav-drawer">
+  <div class="nav-drawer-head">
+    <img src="{BASE}/static/img/logo.png" width="120" height="33" alt="BlanklyDB">
+  </div>
+  <div class="nav-drawer-body iconfont">
+    <ul class="nav-drawer-col">
+      <li class="nav-drawer-title">有趣的内容</li>
+      <li><a href="{BASE}/viewer/video.html" class="nav-drawer-link icon-shipindianshi">视频</a></li>
+      <li><a href="{BASE}/viewer/gallery.html" class="nav-drawer-link icon-tuku">图片</a></li>
+      <li><a href="{BASE}/viewer/dynamic.html" class="nav-drawer-link icon-xinwen">动态（文图）</a></li>
+      <li><a href="{BASE}/viewer/comic.html" class="nav-drawer-link icon-manhua">漫画</a></li>
+      <li><a href="{BASE}/viewer/stickers.html" class="nav-drawer-link icon-a-22zhaozi">表情包</a></li>
+      <li><a href="{BASE}/viewer/audio.html" class="nav-drawer-link icon-yinle-leku">音频</a></li>
+      <li><a href="{BASE}/viewer/artist.html" class="nav-drawer-link icon-chuangzuozhezhongxin">创作者们</a></li>
+      <li><a href="https://live.bilibili.com/1301450" class="nav-drawer-link icon-TV" target="_blank">直播间</a></li>
+    </ul>
+    <ul class="nav-drawer-col">
+      <li class="nav-drawer-title">关于</li>
+      <li><a href="#" class="nav-drawer-link icon-shouquan">关于</a></li>
+      <li><a href="#" class="nav-drawer-link icon-shouquan">STAFF</a></li>
+    </ul>
+    <ul class="nav-drawer-col">
+      <li class="nav-drawer-title">其他</li>
+      <li><a href="#" class="nav-drawer-link icon-24px">API Doc</a></li>
+      <li><a href="https://github.com/BlanklyDB-Project" class="nav-drawer-link icon-24px" target="_blank">开源仓库</a></li>
+    </ul>
+  </div>
+</nav>
